@@ -20,3 +20,5 @@ Project dependencies are listed at the top of the R script as well as a function
 ## Usage
 
 Running the code as is, reproduces the results found in the above publication. Additionally, users can explore how changing parameters such as temperature-dependent mortality, niche widths, initial conditions, etc. influence the role of dispersal and temperature amplitude on shaping phytoplankton realized niches and diversity. 
+
+There are two versions of the model currently: niche_model_publish.R includes static initial phytoplankton concentrations and niche_model-review-ensemble.R runs an ensemble of 100 iterations of the model where initial conditions are randomly selection from a poisson distribution.
