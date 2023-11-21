@@ -5,7 +5,7 @@ gradient of temperature variability and dispersal.
 
 ## Description
 
-This repository includes code to run the model (niche_model_publish.R), analyze model output (tniche_analysis-update.R), and plot model results (niche_model-2022.R) to recreate figures seen in the above publication.  
+This repository includes code to run the model (Smith&Barton-model-2023.R), analyze model output (Smith&Barton-model_analysis-2023.R), and plot model results (Smith&Barton-model_figures-2023.R) to recreate figures seen in the above publication.  
 
 ## Table of Contents
 
@@ -15,10 +15,8 @@ This repository includes code to run the model (niche_model_publish.R), analyze 
 
 ## Installation
 
-Project dependencies are listed at the top of the R script as well as a function to install and load the required packages. Additionally, to successfully run the model analysis (tniche_analysis-update.R), users must download and source the following functions: tniche_analysis-update.R and diversity_function-update.R.
+Project dependencies are listed at the top of the R script as well as a function to install and load the required packages. Additionally, to successfully run the model analysis, users must download and source the following functions: Smith&Barton-model_parameters-2023.R, tniche_analysis-update.R and diversity_function-update.R.
 
 ## Usage
 
-Running the code as is, reproduces the results found in the above publication. Additionally, users can explore how changing parameters such as temperature-dependent mortality, niche widths, initial conditions, etc. influence the role of dispersal and temperature amplitude on shaping phytoplankton realized niches and diversity. 
-
-There are two versions of the model currently: niche_model_publish.R includes static initial phytoplankton concentrations and niche_model-review-ensemble.R runs an ensemble of 100 iterations of the model where initial conditions are randomly selection from a poisson distribution.
+Running the code as is, reproduces the results found in the above publication. Additionally, users can explore how changing parameters such as temperature-dependent mortality strength, niche widths, initial conditions, etc. influence the role of dispersal and temperature amplitude on shaping phytoplankton realized niches and diversity. 
