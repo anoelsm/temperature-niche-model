@@ -1,6 +1,12 @@
 
 #### Load in temperature data ----
-load(paste0(files_home, "Data/temps.Rdata"))
+#load(paste0(files_home, "Data/temps.Rdata"))
+open<-nc_open(paste0(files_home, 'Data/sst.day.mean.nc'))
+# summary.ncdf(open)
+tlon<-ncvar_get(open,'lon')
+tlat<-ncvar_get(open,'lat')
+ttime<-ncvar_get(open,'time')
+tsst<-ncvar_get(open,'sst')
 
 #### Define variables -----
 sp_sep <- 1 #Number of degrees between optimal temperatures
